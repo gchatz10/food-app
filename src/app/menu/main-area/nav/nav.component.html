@@ -1,0 +1,28 @@
+<nav class="bg-light fixed-top">
+  <form (ngSubmit)="onSubmit()" #form="ngForm" class="form">
+    <div class="image bg-info text-center">
+      <img src="../../../../assets/reset.svg" alt="reset" style="cursor: pointer;" (click)="resetForm()">
+    </div>
+    <div class="options">
+      <div class="dropdown">
+        <label for="dropdown">Ταξινόμιση Κατά</label>
+        <select name="dropdown" id="dropdown" ngModel>
+          <option value="none">Καμία Ταξινόμιση</option>
+          <option value="increasing">Αύξουσα Τιμή</option>
+          <option value="descending">Φθίνουσα Τιμή</option>
+        </select>
+      </div>
+      <div class="checkbox">
+        <div *ngFor="let tag of tags; let i = index" class="tag">
+          <label>
+            <input type="checkbox" name='{{ tag }}' ngModel [value]="tag">
+            {{ tag }}
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="image bg-danger">
+      <img src="../../../../assets/search.svg" alt="reset" style="cursor: pointer;" (click)="onSubmit()">
+    </div>
+  </form>
+</nav>

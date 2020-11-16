@@ -1,0 +1,15 @@
+.navigate {
+  margin-top: 200px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .navigate {
+    margin-top: 325px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .navigate {
+    margin-top: 275px;
+  }
+}

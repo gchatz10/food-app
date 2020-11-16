@@ -1,0 +1,47 @@
+.nbar {
+  height: 100px;
+  padding: 40px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+
+.onerow{
+  display: flex;
+}
+
+a {
+  color: white;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #00caf3;
+}
+
+.sticky {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+button{
+  margin-left: 20px;
+}
+
+@media only screen and (max-width: 576px){
+  .nbar{
+    padding: 10px;
+  }
+  
+  .nbar{
+    height: 100px;
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+
+  .onerow{
+    justify-content: space-around;
+  }
+}

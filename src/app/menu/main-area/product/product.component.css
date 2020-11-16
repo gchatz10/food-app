@@ -1,0 +1,45 @@
+.product {
+  display: flex;
+  padding: 30px;
+  border-bottom: 2px solid #5bc0de;
+}
+
+img {
+  flex-shrink: 0;
+}
+
+.name{
+  display: flex;
+  justify-content: space-between;
+}
+
+.tags{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tags a{
+  text-decoration: underline;
+  font-style: italic;
+  padding: 3px;
+}
+
+.details {
+  flex: 1;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.zoom {
+  transition: transform 0.2s;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(1.1);
+}
+
+h5 {
+  font-weight: bold;
+}

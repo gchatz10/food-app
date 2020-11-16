@@ -1,0 +1,18 @@
+<nav class="nbar bg-dark sticky">
+    <!-- Candidate Name -->
+    <a routerLink="/home/starters" class="navbar-brand" style="cursor: pointer;">{{ user.name }} {{ user.surname }}</a>
+    <!-- Search Bar -->
+    <form (ngSubmit)="onSearch()" #searchbar="ngForm">
+        <div class="onerow">
+            <input 
+                class="form-control" 
+                type="text"
+                name="search"
+                id="search"
+                placeholder="Search" 
+                aria-label="Search"
+                ngModel>
+            <button class="btn btn-info" type="submit">Search</button>
+        </div>
+    </form>
+</nav>

@@ -1,0 +1,10 @@
+@media only screen and (max-width: 1020px){
+    .categories{
+        display: flex;
+        width: 100%;
+    }
+
+    app-category-item{
+        flex: 1;    
+    }
+}
